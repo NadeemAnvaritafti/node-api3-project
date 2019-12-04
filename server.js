@@ -5,7 +5,7 @@ const server = express();
 
 server.use(logger);
 
-server.use('/api/user', userRouter);
+server.use('/api/users', userRouter);
 
 server.get('/', (req, res) => {
   res.send(`<h2>Let's write some middleware!</h2>`);
